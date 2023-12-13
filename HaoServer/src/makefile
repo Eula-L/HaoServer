@@ -62,7 +62,7 @@ CC=g++#用于存储编译器版本
 INCLUDE_PATH=../include#用于存储头文件路径
 INSTALL_PATH=/usr/bin/#安装位置
 LIBRARY_PATH= #存放共享库或静态库位置
-LIBRARY=-lpthread -lmysqlclient
+LIBRARY=-lpthread -lmysqlclient #mysql库
 CFLAGS=-I$(INCLUDE_PATH) -c -g -Wall#编译选项
 CPPFLAGS=-I$(INCLUDE_PATH) -c -pipe -g -std=gnu++11 -Wall -W -fPIC #编译选项
 #CPPFLAGS=-D -L -l -O1 -O2 -O3 #预处理选项，编译优化及库使用
