@@ -2,8 +2,8 @@
 
 void CLogic::setNetPackMap()
 {
-    NetPackMap(_DEF_PACK_REGISTER_RQ)    = &CLogic::RegisterRq;
-    NetPackMap(_DEF_PACK_LOGIN_RQ)       = &CLogic::LoginRq;
+    NetPackMap(DEF_PACK_REGISTER_RQ)    = &CLogic::RegisterRq;
+    NetPackMap(DEF_PACK_LOGIN_RQ)       = &CLogic::LoginRq;
 }
 
 #define _DEF_COUT_FUNC_    cout << "clientfd:"<< clientfd << __func__ << endl;

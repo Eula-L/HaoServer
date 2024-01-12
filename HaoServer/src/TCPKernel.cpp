@@ -80,7 +80,7 @@ void TcpKernel::initRand()
 void TcpKernel::DealData(sock_fd clientfd,char *szbuf,int nlen)
 {
     PackType type = *(PackType*)szbuf;
-    if( (type >= _DEF_PACK_BASE) && ( type < _DEF_PACK_BASE + _DEF_PACK_COUNT) )
+    if( (type >= DEF_PACK_BASE) && ( type < DEF_PACK_BASE + DEF_PACK_COUNT) )
     {
         PFUN pf = NetPackMap( type );
         if( pf )

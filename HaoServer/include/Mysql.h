@@ -2,25 +2,23 @@
 #define _MYSQL_H
 #include "packdef.h"
 #include <mysql/mysql.h>
-#include<list>
-#include<string>
+#include <list>
+#include <string>
 
-using namespace  std;
+using namespace std;
 
-
-class CMysql{
+class CMysql
+{
 public:
     int ConnectMysql(const char *server, const char *user, const char *password, const char *database);
-    int SelectMysql(char* szSql,int nColumn,list<string>& lst);
+    int SelectMysql(char *szSql, int nColumn, list<string> &lst);
     int UpdataMysql(char *szsql);
     void DisConnect();
+
 private:
     MYSQL *conn;
 
     pthread_mutex_t m_lock;
 };
-
-
-
 
 #endif
