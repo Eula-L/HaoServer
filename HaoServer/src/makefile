@@ -96,3 +96,8 @@ install:
 #	$(RM) $(INSTALL_PATH)$(TARGET)
 #将安装拷贝的应用删除，注意文件名或变量名，防止误删除，最好先outut确认一下
 
+#执行命令
+#在HaoServer/src目录下
+#make clean 
+#make
+#./server
