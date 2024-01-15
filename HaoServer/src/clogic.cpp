@@ -21,7 +21,7 @@ void CLogic::RegisterRq(sock_fd clientfd,char* szbuf,int nlen)
 
    //name有没有
 
-   //写入数据库
+   //写入数据库id(主键自增),tel,pwd,name,头像
 
    //返回成功
 }
@@ -35,4 +35,20 @@ void CLogic::LoginRq(sock_fd clientfd ,char* szbuf,int nlen)
     STRU_LOGIN_RS rs;
     // rs.m_lResult = password_error;
     SendData( clientfd , (char*)&rs , sizeof rs );
+    //1、拆包 tel pwd
+
+    //2、根据tel 查pwd和id
+
+    //查不到 返回无此用户
+
+    //查到了——pwd是否一致
+    //一致 保存套接字
+    
+    //方法包
+    
+    //不一致
+
+    //返回包id和结果
+
+    
 }
